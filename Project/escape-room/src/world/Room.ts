@@ -14,7 +14,7 @@ export class Room {
   constructor(scene: THREE.Scene, gameState: GameState) {
     const loader = new GLTFLoader();
 
-    loader.load("/assets/room/stan.glb", (gltf) => {
+    loader.load("/assets/room/room.glb", (gltf) => {
       this.object = gltf.scene;
       scene.add(this.object);
 
