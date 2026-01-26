@@ -1,0 +1,26 @@
+# 10x10 terrain grid, green material
+mtllib terrain.mtl
+o Terrain
+
+# vertices and UVs
+# loop: x in [0,10], z in [0,10], step 1
+v 0 0 0
+vt 0.0 0.0
+vn 0 1 0
+v 0 0 1
+vt 0.0 0.1
+vn 0 1 0
+v 0 0 2
+vt 0.0 0.2
+vn 0 1 0
+# ...
+# repeat for all x,z grid points up to x=10,z=10
+# each vertex gets:
+# v x 0 z
+# vt x/10 z/10
+# vn 0 1 0
+
+# Example quad (first square, vertices indices 1,2,12,11)
+usemtl Green
+f 1/1/1 2/2/2 12/12/3 11/11/4
+# repeat faces for entire grid

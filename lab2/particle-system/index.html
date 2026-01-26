@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Particle System</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    canvas { display: block; }
+  </style>
+</head>
+<body>
+  <form id="particleForm" style="position:absolute;top:10px;left:10px;color:white;">
+    <label>Count: <input type="number" name="particleCount" value="500"></label><br>
+    <label>X: <input type="number" name="x" value="0"></label><br>
+    <label>Y: <input type="number" name="y" value="0"></label><br>
+    <label>Z: <input type="number" name="z" value="0"></label><br>
+    <label>X Range: <input type="number" name="xRange" value="100"></label><br>
+    <label>Y Range: <input type="number" name="yRange" value="100"></label><br>
+    <label>Z Range: <input type="number" name="zRange" value="100"></label><br>
+    <label>Life Rate: <input type="number" step="0.001" name="lifeRate" value="0.997"></label><br>
+    <label>Velocity: <input type="number" step="0.02" name="velocity" value="-0.1"></label><br>
+    <button type="submit">Update Particles</button>
+  </form>
+
+  <script type="module" src="./src/main.ts"></script>
+</body>
+</html>
