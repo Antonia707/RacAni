@@ -6,7 +6,7 @@ export class Hands {
 
   constructor(camera: THREE.Camera) {
     const loader = new GLTFLoader();
-    loader.load("/../../assets/hands/hands.glb", (gltf) => {
+    loader.load("../../public/hands/hands.glb", (gltf) => {
       const hands = gltf.scene;
       hands.scale.set(0.1, 0.1, 0.1);
       hands.position.set(0, 0, -0.2);
