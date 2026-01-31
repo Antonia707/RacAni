@@ -13,7 +13,7 @@ export class Room {
 
   constructor(scene: THREE.Scene, gameState: GameState) {
     const loader = new GLTFLoader();
-    const roomUrl = new URL("../assets/room/room.glb", import.meta.url).href;
+    const roomUrl = new URL("../../public/room/room.glb", import.meta.url).href;
 
     loader.load(roomUrl, (gltf) => {
       this.object = gltf.scene;
